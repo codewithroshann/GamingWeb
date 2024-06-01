@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css"
+        integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="custom.css">
+    <title>Gaming Set-Up/Product.in</title>
+</head>
+<style>
+    * {
+        font-family: 'poppins';
+
+    }
+
+    .shop-hero-section {
+        height: 27rem !important;
+    }
+
+    .shop-heading {
+        margin-top: 50px;
+
+        text-align: center;
+    }
+
+    .shop-heading h1 {
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+
+    /*product-section*/
+
+    .product-hero-section {
+        margin-top: 100px;
+        padding: 4rem;
+
+
+    }
+
+    .product-section {
+        display: flex;
+
+        justify-content: space-around;
+
+
+    }
+
+    .image {
+        width: 50%;
+
+    }
+
+    .product-info-section {
+        width: 50%;
+        padding: 10px 2rem;
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .game-name h2 {
+        color: #000;
+    }
+
+    .product-price {
+        position: unset !important;
+        width: 90px;
+        margin-top: 20px;
+        cursor: pointer;
+
+    }
+
+    .product-info p {
+        margin-top: 5rem;
+        color: #888;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+
+    .input {
+        background: #eee;
+        border: none;
+        outline: 4px solid #cce7ff;
+        width: 5rem;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    form button {
+        border: none;
+        outline: none;
+        background: orangered;
+        padding: 12px 20px;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .game-info {
+        margin-top: 60px;
+        line-height: 40px;
+    }
+
+    .game-info ul li {
+        list-style: none;
+        color: #0071f8;
+        cursor: pointer;
+    }
+
+    .game-info ul li span {
+        color: #aaa;
+        width: 120px;
+        display: inline-block;
+    }
+
+    .horizontal-line {
+        width: 80%;
+        background: #aaa;
+        height: 1px;
+        margin: auto;
+    }
+
+    .review-container {
+        width: 80%;
+        margin: auto;
+        padding: 40px;
+        margin-top: 100px;
+        display: flex;
+        color: #000;
+        flex-direction: column;
+        background: #f7f7f7;
+        border-radius: 20px;
+    }
+
+    .review-container span {
+        color: #000;
+        margin: 0 10px 0 0;
+
+    }
+
+    .review-container a {
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+        margin: 0 10px 0 0;
+        font-weight: 600;
+
+
+    }
+
+    .review-container :first-child {
+        color: #0071f8;
+    }
+
+    .description {
+        margin-top: 20px;
+    }
+
+    .description p {
+        color: #4a4a4a !important;
+        margin: 20px 0;
+    }
+
+    .top-category-container {
+        margin: 80px 0 13rem 0;
+    }
+
+    .heading-container {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        padding: 0 20px;
+
+    }
+
+    .heading-3 {
+        text-align: unset;
+
+    }
+
+    .heading-container button {
+        border: none;
+        outline: none;
+        background: orangered;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: 600;
+    }
+
+    .heading-3 h3 {
+        margin: 10px 0;
+    }
+
+    .heading-3 h1 {
+        font-size: 2.5rem
+    }
+
+    footer {
+        margin-top: 100px;
+
+        width: 100%;
+
+    }
+
+    .shop-footer {
+        margin-top: 0px;
+    }
+
+    .mark {
+        background: #2592ff !important;
+    }
+
+    /*responsive shop container*/
+
+    @media (max-width:1000px) {
+        .shop-hero-section {
+            min-height: 30rem !important;
+        }
+
+    }
+
+    @media (max-width:1010px) {
+
+        .product-section {
+            flex-wrap: wrap;
+        }
+
+        .image-container {
+            width: 100%;
+        }
+
+        .image {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .image img {
+            width: 85%;
+            margin: auto;
+        }
+
+        .product-info-section {
+            width: 100%;
+            padding: 0;
+            margin-top: 30px;
+
+        }
+
+        .product-info {
+            width: 85%;
+            margin: auto;
+        }
+
+    }
+
+    @media (max-width:450px) {
+
+        .product-hero-section {
+            padding: 0;
+        }
+
+        .shop-heading h1 {
+            font-size: 3rem;
+        }
+
+        .shop-heading {
+            margin-top: 0 !important;
+        }
+
+        .game-name h2 {
+            font-size: 20px;
+        }
+
+        .product-price {
+            width: 75px;
+            padding: 0 15px;
+        }
+
+        .heading-3 h1 {
+            font-size: 1.5rem;
+        }
+
+        .heading-container button {
+            padding: 8px 15px;
+        }
+    }
+</style>
+
+<body>
+    <div class="hero-section shop-hero-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../GamingWeb/images/logo.png" alt="">
+            </div>
+            <div class="links">
+                <button> <a href="../GamingWeb/index.html">Home</button></a>
+                <button> <a href="../GamingWeb/shop.html">Our Shop </a></button>
+                <button> <a href="../GamingWeb/product.html">Product Details </a></button>
+                <button> <a href="../GamingWeb/contact.html">Contact Us</a></button>
+                <button class="sign-in">SIGN IN</button>
+            </div>
+            <div class="toggle-bar" id="toggle-bar">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+            <!-- DropDown-->
+            <div class="drop-down">
+                <div class="dropdown-box " id="drop-down">
+
+                    <ul>
+                        <li><a href="../GamingWeb/index.html">Home</a> </li>
+                        <li><a href="shop.html">Our Shop</a></li>
+                        <li><a href="product.html">Product Details</a></li>
+                        <li><a href="../GamingWeb/contact.html">Contact Us</a></li>
+                        <button class="sign-in drop-down-sign-in">SIGN IN</button>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="shop-heading">
+            <h1>modern warfare-ii</h1>
+            <p>Home > Our Shop > Assasian Creed</p>
+        </div>
+    </div>
+    <!--hero-section-->
+
+    <div class="product-hero-section">
+        <div class="product-section">
+
+            <div class="image-container">
+                <div class="image">
+                    <img src="../GamingWeb/images/single-game.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="product-info-section">
+                <div class="product-info">
+                    <div class="game-name">
+                        <h2>Call of Duty : Modern Warfare-II</h2>
+                    </div>
+                    <div class="price product-price">$33</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                        tenetur placeat iste recusandae
+                        eos esse similique culpa ducimus cumque dolor!</p>
+
+                    <form id="qty" action="#">
+                        <input class="input" type="qty" class="form-control" id="1" aria-describedby="quantity"
+                            placeholder="1">
+                        <button type="submit"><i class="fa fa-shopping-bag"></i> ADD TO CART</button>
+                    </form>
+                    <div class="game-info">
+                        <ul>
+                            <li> <span>Game ID</span> COD MMII</li>
+                            <li><span>Genre</span>Action Team Single</li>
+                            <li><span>Multi-Tag</span>War Battle-Royal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="horizontal-line"></div>
+
+
+    <div class="review-container">
+        <div class="containr">
+            <a href="##">Description</a>
+            <span>|</span>
+            <a href="##">Review(3)</a>
+
+        </div>
+        <div class="description">
+            <p>You can search for more templates on Google Search using keywords such as "templatemo digital marketing",
+                "templatemo one-page", "templatemo gallery", etc. Please tell your friends about our website. If you
+                need a variety of HTML templates, you may visit Tooplate and Too CSS websites.</p>
+            <p>Coloring book air plant shabby chic, crucifix normcore raclette cred swag artisan activated charcoal.
+                PBR&B fanny pack pok pok gentrify truffaut kitsch helvetica jean shorts edison bulb poutine next level
+                humblebrag la croix adaptogen. Hashtag poke literally locavore, beard marfa kogi bruh artisan succulents
+                seitan tonx waistcoat chambray taxidermy. Same cred meggings 3 wolf moon lomo irony cray hell of bitters
+                asymmetrical gluten-free art party raw denim chillwave tousled try-hard succulents street art.</p>
+        </div>
+
+    </div>
+
+    <!--buttom container-->
+    <div class="top-category-container">
+        <div class="top-category">
+
+            <div class="heading-container product-heading-container">
+                <div class=" heading heading-3">
+                    <h3>ACTION</h3>
+                    <h1>Related Games</h1>
+                </div>
+                <button> <a style="text-decoration: none;" href="shop.html">VIEW ALL</a></button>
+            </div>
+
+            <div class="top-category-section">
+                <div class="row">
+
+                    <div class="category-box">
+                        <span class="category category-info">Action</span>
+                        <div class="img ">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/categories-01.jpg" alt="">
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="category-box">
+                        <span class="category category-info">Action</span>
+                        <div class="img ">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/categories-02.jpg" alt="">
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="category-box">
+                        <span class="category category-info">Action</span>
+                        <div class="img ">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/categories-03.jpg" alt="">
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="category-box">
+                        <span class="category category-info">Action</span>
+                        <div class="img ">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/categories-04.jpg" alt="">
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="category-box">
+                        <span class="category category-info">Action</span>
+                        <div class="img ">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/categories-05.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--footer Section-->
+    <footer>
+        <div class="footer-section shop-footer">
+            <span class="footer-content"> Copyright &#169; 2024 LUGX Gaming Company . All right reserved </span>
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="custom.js"></script>
+</body>
+
+</html>

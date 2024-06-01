@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css"
+        integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="custom.css">
+    <title>Gaming Set-Up/Shop.in</title>
+</head>
+<style>
+    * {
+        font-family: 'poppins';
+    }
+
+    .shop-hero-section {
+        height: 27rem !important;
+    }
+
+    .shop-heading {
+        margin-top: 50px;
+
+        text-align: center;
+    }
+
+    .shop-heading h1 {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+    .mark{
+    background:#2592ff !important;
+}
+
+    .section {
+        margin-top: 100px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-container {
+        width: 100%;
+        display: flex;
+    }
+
+    .filter-category {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .filter-category button {
+        text-transform: uppercase;
+        padding: 10px 25px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        background: #eee;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0 10px;
+
+
+        color: #000;
+    }
+
+    .click {
+        background: orangered !important;
+        color: #fff !important;
+    }
+
+    .shop-row {
+        width: 100% !important;
+        gap: 30px !important;
+    }
+
+    .row-2 {
+        min-width: 19rem !important;
+    }
+
+    .navigation-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 60px;
+
+    }
+
+    .navigation {
+        display: flex;
+        margin: auto;
+
+    }
+
+    .navigation li a {
+        color: #000;
+        width: 100%;
+        text-decoration: none;
+        display: block;
+        border-radius: 25px;
+        transition: 0.2s all ease-in-out;
+
+    }
+
+    .navigation li {
+
+        list-style: none;
+        background: #eee;
+        margin: 10px;
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .select {
+        background: #0071f8 !important;
+        color: #fff !important;
+    }
+
+    .navigation li:hover {
+        background: #0071f8 !important;
+
+    }
+
+    .navigation li a:hover {
+        color: #fff !important;
+    }
+
+    .shop-footer {
+        margin-top: 0px;
+    }
+    .game-box.hide{
+        display: none;
+    }
+
+    /*responsive shop container*/
+
+    @media (max-width:1000px) {
+        .shop-hero-section {
+            min-height: 30rem !important;
+        }
+
+    }
+
+    @media (max-width:450px) {
+
+        .shop-heading {
+            margin-top: 0 !important;
+        }
+    }
+</style>
+
+<body>
+    <div class="hero-section shop-hero-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../GamingWeb/images/logo.png" alt="">
+            </div>
+            <div class="links">
+                <button > <a href="../GamingWeb/index.html">Home </a></button>
+                <button> <a href="../GamingWeb/shop.html">Our Shop </a></button>
+                <button> <a href="../GamingWeb/product.html">Product Details </a></button>
+                <button> <a href="../GamingWeb/contact.html">Contact Us</a></button>
+                <button class="sign-in">SIGN IN</button>
+            </div>
+            <div class="toggle-bar" id="toggle-bar">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+            <!-- DropDown-->
+            <div class="drop-down">
+                <div class="dropdown-box " id="drop-down">
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="shop.html">Our Shop</a></li>
+                        <li><a href="../GamingWeb/product.html">Product Details</a></li>
+                        <li><a href="../GamingWeb/contact.html">Contact Us</a></li>
+                        <button class="sign-in drop-down-sign-in">SIGN IN</button>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div class="shop-heading">
+            <h1>Our shop</h1>
+            <p>Home > Our Shop</p>
+        </div>
+    </div>
+
+    <div class="section treading">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-category">
+                    <button data-name="all" class="click">show all</button>
+                    <button data-name="adventure">adventure</button>
+                    <button data-name="strategy">strategy</button>
+                    <button data-name="racing">racing</button>
+                </div>
+            </div>
+
+
+
+            <div class="game-container">
+                <div class="game-row shop-row">
+
+                    <div class="game-box" data-name="strategy">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/trending-02.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$44</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Legend Saga</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="game-box" data-name="strategy">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/trending-01.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$20</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>WarFrame</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-box" data-name="racing">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/trending-03.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$64</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Hero Bash</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                   </div>
+
+                    <div class="game-box" data-name="strategy">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/trending-04.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$32</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Dragon League</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!--row-2-->
+                    <div class="game-box row-2" data-name="strategy">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/top-game-03.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$45</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Hero Bash</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-box row-2" data-name="racing">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/top-game-04.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$28</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Dragon League</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="game-box row-2" data-name="racing">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/top-game-05.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$69</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>WarFrame</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-box row-2" data-name="adventure">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/top-game-06.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$56</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Legend Saga</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--row-3-->
+                    <div class="game-box" data-name="racing">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/trending-03.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$77</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Hero Bash</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-box" data-name="adventure">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/trending-04.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$21</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Dragon League</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="game-box" data-name="adventure">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/trending-01.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$38</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>WarFrame</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="game-box" data-name="adventure">
+                        <div class="thumb">
+                            <a href="../GamingWeb/product.html">
+                                <img src="../GamingWeb/images/trending-02.jpg" alt="">
+                            </a>
+                            <span class="price price-2">$87</span>
+                        </div>
+                        <div class="down-content">
+                            <span class="category">Action</span>
+                            <h4>Legend Saga</h4>
+                            <a href="../GamingWeb/product.html"> <i class="fa-solid fa-bag-shopping" style="color:#ffffff;"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--navigatioin button-->
+                    <div class="navigation-container">
+                        <div class="navigation">
+                            <li><a href="shop.html">< </a>
+                            </li>
+                            <li> <a href="shop.html">1</a></li>
+                            <li class="select"> <a href="shop.html" class="select">2</a></li>
+                            <li> <a href="shop.html">3</a></li>
+                            <li> <a href="shop.html">></a></li>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--footer Section-->
+    <footer>
+        <div class="footer-section shop-footer">
+            <span class="footer-content"> Copyright &#169; 2024 LUGX Gaming Company . All right reserved </span>
+
+        </div>
+
+
+
+    </footer>
+  <script src="custom.js"></script>
+</body>
+
+</html>
